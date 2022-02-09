@@ -1,4 +1,6 @@
-import '../styles/globals.css'
+import '../styles/globals.scss'
+import '../styles/blogs.scss'
+
 
 // function MyApp({ Component, pageProps }) {
 //   <>
@@ -18,10 +20,14 @@ import Head from "next/head";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Head>
-        
-      </Head>
-      <Component {...pageProps} />
+      <body>
+        <header className='header'>
+          kogiblo kogiのブログ
+        </header>
+        <div className="mv">
+          <Component {...pageProps} />
+        </div>
+      </body>
     </>
   );
 }
